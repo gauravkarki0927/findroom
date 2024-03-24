@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  nav{
+    background: #fff;
+    height: 60px;
+    width: 100%;
+  }
+  label.logo{
+    color: rgb(224, 63, 63);
+    line-height: 60px;
+    padding:0 25px;
+    font-size: 28px;
+    font-weight: 800;
+  }
+  label .nep{
+    font-size: 32px;
+    color: rgb(3, 64, 209);
+  }
+  label .com{
+    color: rgb(11, 207, 40);
+    font-size: 16px;
+  }
+
+  .home {
+    width: 140px;
+    font-size: 14px;
+    line-height: 60px;
+    color: #2b2424;
+    text-decoration: none;
+}
+
+  .home i{
+    font-size: 14px;
+    cursor: pointer;
+    margin-right:8px;
+}
+
+ .bton{
+    position:absolute;
+    top: 16px;
+    left: 35%;
+    outline: none;
+    width: 320px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+    cursor: pointer;
+    padding: 0px 6px;
+    border: 1px solid rgba(80, 81, 81, 0.591);
+    align-items: center;
+    border-radius: 40px;
+    margin-left: 18px;
+    background: none;
+}
+
+ .bton:hover {
+    color: rgb(0, 102, 255);
+}
+
+ .bton a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+}
+ .bton a i{
+    margin-left:8px;
+}
+  nav .list{
+    float: right;
+    margin-right: 20px;
+  }
+  nav .list li{
+    display: inline-block;
+    line-height: 60px;
+    margin-right: 16px;
+  }
+  nav .list li a{
+    color: #2b2424;
+    font-size: 14px;
+    /* padding: 7px 13px; */
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  nav .list li a {
+    text-decoration: none;
+    color: #2b2424;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+nav .list li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(95, 25, 25);
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav .list li a:hover:after {
+    width: 100%;
+}
+
+nav .list li a i {
+    padding-right: 4px;
+}
+  .checkbtn{
+    color: #2b2424;
+    float: right;
+    line-height: 66px;
+    margin-right: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 1160px){
+    nav .list li a{
+        font-size: 16px;
+      }
+      .bton{
+          position:absolute;
+          top: 14px;
+          left: 30%;
+          width: 220px;
+      }
+  }
+  @media (max-width: 975px){
+    .bton{
+        position:absolute;
+        top: 14px;
+        left: 33%;
+        width: 200px;
+    }
+  }
+  @media (max-width: 958px){
+    .checkbtn{
+      display: block;
+    }
+    label.logo{
+        font-size: 24px;
+      }
+      label .nep{
+        font-size: 24px;
+      }
+      label .com{
+        font-size: 16px;
+      }
+    .list{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #1c2c3d;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav .list li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav .list li a{
+      font-size: 20px;
+      color:#fff;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ .list{
+      left: 0;
+    }
+    .bton{
+        position:absolute;
+        top: 14px;
+        left: 35%;
+        outline: none;
+        width: 420px;
+        height:36px;
+    }
+  }
+  @media (max-width: 785px){
+    .bton{
+        position:absolute;
+        top: 14px;
+        left: 40%;
+        outline: none;
+        width: 320px;
+    }
+  }
+  @media (max-width: 675px){
+    .bton{
+        position:absolute;
+        top: 14px;
+        left: 45%;
+        outline: none;
+        width: 240px;
+    }
+  }
+  @media (max-width: 595px){
+    .bton{
+        position:absolute;
+        top: 8%;
+        left: 6%;
+        width:80%;
+        height:36px;
+    }
+  }
+  @media (max-width: 365px){
+    label.logo{
+        font-size: 20px;
+      }
+      label .nep{
+        font-size: 20px;
+      }
+      label .com{
+        font-size: 12px;
+      }
+      .home{
+        font-size: 12px;
+        width:80px;
+      }
+    .bton{
+        position:absolute;
+        top: 8%;
+        left: 4%;
+        width:80%;
+        height:36px;
+    }
+  }

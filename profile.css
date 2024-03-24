@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width:100%;
+    height: 100vh;
+}
+
+.right .heading{
+    display: flex;
+}
+.create 
+{
+    position: absolute;
+    right:2%;
+    top:4%;
+}
+.create button {
+    border: none;
+    outline: none;
+    padding: 4px;
+    background: rgb(197, 200, 204);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    width:60px;
+}
+
+.create button:hover {
+    background: rgb(178, 181, 186);
+}
+.create button a{
+    text-decoration: none;
+    color:#000000;
+    font-size: 14px;
+} 
+
+.create button i{
+    margin-right: 4px;
+}
+.box {
+    width: 80%;
+    border: 1px solid #e3e3e3c2;
+    box-shadow: 4px 4px 4px rgba(229, 229, 229, 0.228);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    display: flex;
+    font-size: 14px;
+}
+
+.box .right .lable {
+    margin: 20px 0 8px 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.box .left .lable{
+    margin:10px 0 4px 20px;
+    font-size: 14px;
+}
+.box .un {
+    width: 320px;
+    height: 30px;
+    background: #fff;
+    color: #000000;
+    padding: 4px;
+    line-height: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(84, 84, 84, 0.541);
+    font-weight: 100;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box .an {
+    width: 260px;
+    height: 26px;
+    background: #fff;
+    color: #000000;
+    padding: 2px 8px;
+    line-height: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(84, 84, 84, 0.541);
+    font-weight: 100;
+    display: flex;
+}
+
+.box .left {
+    border-right: 1px solid #9896964f;
+    width: 28%;
+    height: 100%;
+    margin-left: 8px;
+}
+
+.box .left .top {
+    width: 100%;
+    height: 200px;
+}
+
+.box .left .top .image {
+    width: 202px;
+    height: 142px;
+    margin-left: 12%;
+    margin-top: 5%;
+    border: 1px solid #93939373;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.box .left .top .image img{
+    width: 200px;
+    height: 140px;
+    border-radius: 4px;
+}
+.box .left .top .image img:hover{
+    box-shadow: 4px 4px 4px rgba(58, 58, 58, 0.508);
+}
+
+.box .left .top h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.box .left .mid {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.box .left .mid p {
+    font-size: 16px;
+    margin-top: 8px;
+}
+.rs, .gender{
+    height:40px;
+    line-height: 10px;
+}
+.rs i, .gender i{
+    font-size: 8px;
+    color:rgb(14, 159, 14);
+    margin-right:4px;
+}
+
+.box .right {
+    width: 74%;
+}
+
+.box .right h2 {
+    width: 100%;
+    height: 40px;
+    margin-top: 24px;
+    margin-left: 38px;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.center .left,
+.center .right {
+    flex: 50%;
+}
+.box p.hero{
+    color:#000;
+    margin:0;
+}
+
+.below {
+    width: 90%;
+    height: 180px;
+    outline: none;
+    border: 1px solid #ccc;
+    resize: none;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 14px;
+    margin: 28px 34px;
+    display: block;
+    overflow-y: scroll;
+}
+.below p{
+    padding:2px;
+}
+
+@media (max-width: 800px) {
+
+    .center .right,
+    .cener .left {
+        flex: 100%;
+    }
+
+    .un {
+        flex: 50%;
+    }
+}
+@media (max-width: 1150px){
+    .box{
+        display: block;
+        top:100%;
+    }
+    .box .left, .box .right{
+        width:90%;
+    }
+    .right .heading button{
+        margin-right:80%;
+    }
+  }

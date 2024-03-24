@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+  
+body {
+	width:100%;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+	background-color: #333333;
+	color: white;
+	width: 200px;
+	padding: 30px 14px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    font-size: 28px;
+    color: rgb(224, 63, 63);
+}
+.sidebar h2 span {
+    color: rgb(3, 64, 209);
+}
+.sidebar h2 .nep {
+    color: rgb(11, 207, 40);
+    font-size: 14px;
+}
+
+.sidebar .nickname{
+    text-decoration: line-through;
+    color:#be0ba1;
+    font-style: italic;
+}
+
+.sidebar ul {
+	margin-top: 20px;
+	list-style-type: none;
+}
+
+.sidebar .ua{
+	margin-top: 38px;
+}
+.sidebar ul li{
+    padding: 6px 12px;
+    
+}
+.sidebar ul li input[type=button]{
+    border:none;
+    outline: none;
+    background: transparent;
+    margin-left: 8px;
+    color: white;
+    cursor: pointer;
+}
+.sidebar ul li input[type=button]:hover{
+    font-size:14px;
+    color:#f3eeee;
+}
+.sidebar li a {
+	color: white;
+	text-decoration: none;
+	/* display: block; */
+	padding: 0 12px;
+    font-size: 14px;
+}
+
+.right{
+	display: block;
+	width:100%;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:12px 8px;
+}
+.header .name{
+	display: flex;
+}
+.header .name img{
+	margin:14px 8px 0 18px;
+	width:90px;
+	height:24px
+}
+
+.button {
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+	color:#fff;
+}
+button i{
+	width:1px;
+    height:1px;
+    margin-left:2px;
+    margin-right: 18px;
+    color:#fff;
+}
+#list{
+	background: #e2dddd;
+    padding:2px;
+    height:28px;
+    width:60px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+#list .edit{
+	text-decoration: none;
+    color:#000;
+}
+button .fa-pen{
+    color:#000;
+}
+
+#listi{
+	outline: none;
+    width:80px;
+    background: #9428b4;
+    height:28px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+#listii{
+	background: #c77101;
+    border-radius: 4px;
+    width:85px;
+    height:28px;
+    outline: none;
+    border:none;
+}
+
+.content {
+	padding: 8px;
+	flex-grow: 1;
+}
+
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+    padding:8px;
+    background: #f3f3f388;
+}
+
+.card {
+	/* background-color: #f1f1f18e; */
+    background: #fff;
+	padding: 8px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.card p {
+	margin: 0;
+	font-size: 14px;
+}
+.count span{
+    font-size: 11px;
+}
+.status{
+    margin-left:12px;
+    font-size: 12px;
+}
+.status .fa-arrow-up{
+    margin:2px;
+    color:green;
+}
+.status .fa-arrow-down{
+    margin-right:8px;
+    color:rgb(128, 0, 0);
+}
+
+.search-bar {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 12px;
+    /* background-color: #f1f1f18e; */
+    background: #f3f3f388;
+}
+
+.search-bar form{
+	width:100%;
+	margin:0 100px;
+	padding:4px;
+}
+
+.search-bar p{
+    margin-left: 12px;
+    line-height: 40px;
+}
+.search-bar .src{
+    display: flex;
+    width:220px;
+    border:1px solid #19191958;
+    border-radius: 6px;
+}
+.search-bar .src i,.search-bar .src2 i{
+	margin-left: 8px;
+	color:#000;
+}
+.search-bar .src2{
+    display: flex;
+    width:220px;
+    border:1px solid #19191958;
+    border-radius: 6px;
+}
+
+.search-bar .src i:hover,.search-bar .src2 i:hover{
+	cursor: pointer;
+	color:red;
+}
+.search-bar .src input[type=text],.search-bar .src2 input[type=text]{
+    height:30px;
+    outline: none;
+    border:none;
+	width:180px;
+	padding:4px 12px;
+}
+::placeholder{
+    text-align: center;
+}
+.search-bar .src button,.search-bar .src2 button{
+    outline: none;
+    background: none;
+    border:none;
+    cursor: pointer;
+    margin-left: 6px;
+    font-size: 16px;
+}
+.search-bar .src:hover,.search-bar .src2:hover{
+	border:1px solid green;
+}
+.search-bar .src button:hover,.search-bar .src2 button:hover{
+    color:red;
+}
+
+.function {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+.table {
+	background-color: #f1f1f1;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.table h3 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.table p {
+	margin: 0;
+	font-size: 14px;
+}
+
+/* Tables */
+.function .files{
+    display: none;
+    width:100%;
+}
+.function .files .cont,.function .userpost .cont,.function .users .cont,
+.function .suspend .cont,.function .active .cont,.function .register .cont,
+.function .userlog .cont,.function .posted .cont{
+    width:100%;
+    border-collapse:collapse;
+    margin:12px 0;
+    flex-wrap: wrap;
+}
+.function .files .cont thead tr,.function .userpost .cont thead tr,
+.function .users .cont thead tr,.function .suspend .cont thead tr,
+.function .active .cont thead tr,.function .register .cont thead tr,
+.function .userlog .cont thead tr,.function .posted .cont thead tr{
+    background: rgba(160, 207, 89, 0.445);
+}
+.function .files .cont th,
+.function .files .cont td,
+.function .userpost .cont th,
+.function .userpost .cont td,
+.function .users .cont th,
+.function .users .cont td,
+.function .suspend .cont th,
+.function .suspend .cont td,
+.function .active .cont th,
+.function .active .cont td,
+.function .register .cont th,
+.function .register .cont td,
+.function .userlog .cont th,
+.function .userlog .cont td,
+.function .posted .cont th,
+.function .posted .cont td{
+    padding:8px;
+    text-align: center;
+}
+.function .files .cont tbody tr,.function .userpost .cont tbody tr,
+.function .users .cont tbody tr,.function .suspend .cont tbody tr,
+.function .active .cont tbody tr,.function .register .cont tbody tr,
+.function .userlog .cont tbody tr,.function .posted .cont tbody tr{
+    border-bottom: 1px solid #42414147;
+    border-radius: 4px;
+}
+.function .users .cont tbody tr{
+    font-size: 14px;
+}
+.function .files .cont tbody tr td .abtn,.function .userpost .cont tbody tr td .abtn,
+.function .users .cont tbody tr td .abtn.function .suspend .cont tbody tr td .abtn
+.function .active .cont tbody tr td .abtn,.function .register .cont tbody tr td .abtn{
+    display: flex;
+}
+.function .userpost .cont tbody tr td .abtn button,
+.function .suspend .cont tbody tr td .abtn button,
+.function .active .cont tbody tr td .abtn button{
+    margin:0px 4px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background:rgb(29, 177, 29);
+    border-radius: 3px;
+    color:#efe9e9e4;
+    padding:4px 8px;
+}
+.function .files .cont tbody tr td .abtn button{
+    margin:0px 4px;
+    padding:2px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background:rgb(29, 177, 29);
+    border-radius: 3px;
+    /* width:60px; */
+    color:#efe9e9e4;
+}
+.function .users .cont tbody tr td .abtn button{
+    padding:4px 8px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background: rgb(29, 177, 29);
+    border-radius: 3px;
+    color:#efe9e9e4;
+}
+.function .suspend .cont tbody tr td .abtn .unb{
+    background: rgb(209, 136, 1);
+    padding:4px 6px;
+}
+.function .files .cont tbody tr td .abtn .dlt,
+.function .userpost .cont tbody tr td .abtn .dlt,
+.function .users .cont tbody tr td .abtn .dlt{
+    background: red;
+    padding:4px 8px;
+}
+.function .files .cont tbody tr td .abtn button a,.function .userpost .cont tbody tr td .abtn button a,
+.function .users .cont tbody tr td .abtn button a,.function .suspend .cont tbody tr td .abtn button a,
+.function .active .cont tbody tr td .abtn button a{
+    text-decoration: none;
+    color:#efe9e9e4;
+}
+.function .userpost{
+    display: none;
+}
+.function .users{
+    display: none;
+}
+.function .suspend{
+    display: none;
+    width:100%;
+}
+.function .active{
+    display: none;
+}
+.function .register{
+    display: none;
+}
+.function .logged{
+    display: none;
+}
+.function .posted{
+    display: none;
+}

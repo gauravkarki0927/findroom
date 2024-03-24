@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+.main {
+    max-width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(232, 224, 224);
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+}
+
+.main .top .hs {
+    color: rgb(224, 63, 63);
+    font-size: 32px;
+}
+
+.main .top .hs span {
+    color: rgb(3, 64, 209);
+    font-size: 32px;
+}
+
+.main .top .hs .nep {
+    color: rgb(11, 207, 40);
+    font-size: 24px;
+    line-height: 30px;
+}
+.box{
+    display:flex;
+}
+.my-responsive-div {
+  width: 25%;
+  box-sizing: border-box;
+  margin:20px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.187);
+  height:500px;
+  display:block;
+  text-align: center;
+}
+.inner1{
+  height:200px;
+  box-sizing: border-box;
+  background: url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.inner2{
+  height:270px;
+  padding: 20px;
+}
+.inner1 .image-file{
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  top:130px;
+  width:120px;
+  height:120px;
+}
+.inner1 .image-file img{
+  border-radius: 8px;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.inner2 .top{
+  position: relative;
+  top:30px;
+  padding:4px;
+} 
+.inner2 .top h2{
+  margin:0 0 -5px 0;
+  padding:0;
+}
+.inner2 .top .email{
+  margin:0;
+  padding:0;
+  font-size: 13px;
+}
+.inner2 .top .email:hover{
+  color:rgb(225, 20, 20);
+}
+.inner2 .top .uad{
+  margin:4px 0 8px 0;
+  display:flex;
+  justify-content: center;
+  gap:10px;
+}
+
+.inner2 .top .uad li{
+  list-style: none;
+}
+.inner2 .count{
+  border-top:2px solid rgba(49, 48, 48, 0.237);
+  position: relative;
+  top:50px;
+}
+.inner2 .pdls{
+  padding:20px 0 0 0;
+  display:flex;
+  justify-content: space-around;
+}
+.inner2 .pdls li{
+  list-style: none;
+  width:33%;
+  border:1px solid #ecebeb41;
+  background: #ecebeb28;
+  padding:0 8px;
+  cursor: pointer;
+  font-size:14px;
+}
+.inner2 .pdls li:hover{
+  background: #0c0c0c0e;
+  border-radius: 4px;
+}
+.inner2 .pdls li .ttl{
+  font-weight: 600;
+}
+.inner2 .details{
+  position: relative;
+  top:25px;
+}
+.inner2 .det{
+  padding:20px 0 0 0;
+  display:flex;
+  justify-content: space-around;
+}
+.inner2 .det li{
+  list-style: none;
+  width:33%;
+  padding:0 12px;
+  cursor: pointer;
+  font-size:14px;
+}
+.det .result{
+  font-size: 14px;
+}
+.inner2 .top .uad li, .inner2 .details .det li{
+  font-size: 16px;
+}
+.post{
+    width:1000px;
+    height:auto;
+    margin:20px 10px;
+}
+
+#tabs {
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    user-select: none;
+    height: auto;
+    padding: 4px;
+}
+
+.box .cont {
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 1em;
+    text-align: left;
+    width: 100%;
+    /* Ensure the table takes up 100% of the width */
+    text-align: left;
+}
+
+.box .cont td {
+    padding: 18px 6px;
+}
+
+.box table tbody tr td .post {
+    margin: auto;
+    border: 2px solid #dad3d382;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    width: 284px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.box .cont .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box .cont tbody tr {
+    border-radius: 4px;
+}
+
+.box table tbody tr td .post:hover {
+    border: 2px solid rgb(201, 209, 213);
+    box-shadow: 0 0 16px 8px rgba(132, 132, 132, 0.329);
+}
+
+.box table tbody tr td .des {
+    padding: 4px;
+}
+
+.box table tbody tr td .post .img {
+    width: 280px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.box table tbody tr td button {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100px;
+    padding: 6px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(207, 125, 3);
+}
+
+#tabs-2 .box table tbody tr td #b1,#tabs-3 .box table tbody tr td #b1, #tabs-4 .box table tbody tr td #b1{
+    background: rgb(7, 149, 23);
+    cursor: default;
+    height:33px;
+}
+#tabs-3 .box table tbody tr td #b1:hover{
+    background: rgb(9, 119, 22);
+}
+#tabs-1 .box table tbody tr td #btn2, #tabs-2 .box table tbody tr td #b2,#tabs-3 .box table tbody tr td #b2{
+    background: rgb(218, 39, 16);
+    cursor: pointer;
+}
+
+#tabs-1 .box table tbody tr td #btn2:hover, #tabs-2 .box table tbody tr td #b2:hover,#tabs-3 .box table tbody tr td #b2:hover{
+    background: rgb(173, 28, 8);
+}
+#tabs-2 .box table tbody tr td button i,#tabs-3 .box table tbody tr td button i,#tabs-4 .box table tbody tr td button i{
+    margin-right:4px;
+}
+.box table tbody tr td button:hover {
+    background: rgb(136, 85, 9);
+}
+
+.box table tbody tr td button a {
+    text-decoration: none;
+    color: #fff;
+}

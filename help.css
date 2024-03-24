@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+body{
+    width:100%;
+}
+.box{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    position: absolute;
+    top:16%;
+    z-index: -1;
+}
+.box #accordion{
+    width:80%;
+    padding:8px;
+    height:auto;
+}
+
+.box #accordion .data{
+    height:160px;
+}

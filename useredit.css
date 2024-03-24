@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width:100%;
+    height: 100vh;
+}
+.box{
+    width:80%;
+    height:80%;
+    border:1px solid #e3e3e3c2;
+    box-shadow: 4px 4px 4px rgba(229, 229, 229, 0.228);
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+}
+.box .left{
+    border-right:1px solid #9896964f;
+    width:28%;
+    height:100%;
+    margin-left: 8px;
+}
+.box .left .top{
+    width:100%;
+    height:200px;
+}
+.box .left .mid{
+    width:100%;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.box .left .mid p{
+    font-size: 16px;
+    margin-top: 8px;
+}
+.box .left .mid input[type=radio]{
+    margin:8px;
+}
+.box .left .social{
+    font-size: 14px;
+}
+.box .left .social input[type=text]{
+    width:80%;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    padding:6px 8px;
+    height:24px;
+}
+.box .left .top .image{
+    width: 202px;
+    height: 142px;
+    margin-left: 12%;
+    margin-top: 5%;
+    border: 1px solid #93939373;
+    cursor: pointer;
+    object-fit: contain;
+}
+.box .left .top img{
+    width: 200px;
+    height: 140px;
+    border-radius: 4px;
+}
+.box .left .top .image img:hover{
+    box-shadow: 4px 4px 4px rgba(58, 58, 58, 0.508);
+}
+.box .left .top h3{
+    width:100%;
+    text-align: center;
+    margin-top: 18px;
+}
+.box .right{
+    float: right;
+    width:70%;
+    height:100%;
+    margin:auto 0;
+}
+.box .right h2{
+    width:100%;
+    height: 40px;
+    margin-top:24px;
+    margin-left: 18px;
+}
+.box .right .part1{
+    width:50%;
+    height:60%;
+    margin-left: 18px;
+    margin-bottom: 30px;
+}
+.box .right .part2{
+    float: right;
+    width:50%;
+    height:60%;
+    margin:auto 0;
+}
+.box .right .part2 label{
+    width:80px;
+}
+.box .right .part2 input, .part1 input{
+    width:120px;
+    font-size: 14px;
+    height:28px;
+    margin:8px;
+    width:80%;
+    outline: none;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    padding:6px;
+}
+.box .right .part2 .add{
+    height:30px;
+    display: inline;
+}
+.box .right .part2 .add input{
+    width:100px;
+}
+.box .right textarea{
+    outline: none;
+    border:1px solid #ccc;
+    resize: none;
+    border-radius: 4px;
+    padding:4px;
+    font-size: 14px;
+    margin:auto;
+    display: block;
+}
+.box .right button{
+    margin-top: 8px;
+    height:30px;
+    width:70px;
+    text-align: center;
+    font-size: 14px;
+    background: #858585;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding:2px;
+    margin-left: 4%;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.box .right button a{
+    text-decoration: none;
+    color:#fff;
+}
+.box .right .upd{
+    background: rgba(0, 102, 255, 0.833);
+    color:#fff;
+}
+.box .right .upd:hover{
+    background: rgba(3, 89, 218, 0.833);
+}
+.left .top label{
+    width:32px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 16%;
+    padding: 2px;
+    position: absolute;
+    top:20%;
+    left:1%;
+    background: rgb(210, 210, 211);
+    color:#000000;
+    border-radius: 50%;
+    text-align: center;
+}
+.left .top label:hover{
+    background: rgb(40, 40, 41);
+    color:#d7d3d3;
+}
+.left .top input[type=file]{
+    display: none;
+}
+.left .top input[type=button]{
+    margin-left: 12px;
+    width:60px;
+    padding:4px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    border:none;
+    background: rgba(212, 211, 211, 0.8);
+}
+.left .top .del:hover{
+    background: red;
+    color:#fff;
+}

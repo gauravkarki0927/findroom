@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.794) url(index1.jpg) no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    background-size: cover;
+    transition: 5s;
+
+    /* animation-name: change; */
+    animation-direction:alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out;
+}
+@keyframes change {
+    0%{
+        background: rgba(0, 0, 0, 0.794) url(index.jpg);
+    }
+    20%{
+        background: rgba(0, 0, 0, 0.794) url(index2.jpg);
+    }
+    40%{
+        background: rgba(0, 0, 0, 0.794) url(index3.jpg);
+    }
+    60%{
+        background: rgba(0, 0, 0, 0.794) url(index4.jpg);
+    }
+    80%{
+        background: rgba(0, 0, 0, 0.794) url(index5.jpg);
+    }
+    100%{
+        background: rgba(0, 0, 0, 0.794) url(index1.jpg);
+    }
+}
+
+nav {
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+nav .logo p {
+    line-height: 60px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 28px;
+    color: rgb(172, 38, 38);
+}
+
+.logo p span {
+    color: rgba(19, 69, 185, 0.808);
+    font-size: 32px;
+}
+
+.logo p .nep {
+    color: rgb(11, 207, 40);
+    font-size: 16px;
+}
+
+nav .pc {
+    display: flex;
+    gap:14px;
+}
+
+nav .pc li {
+    list-style: none;
+}
+
+nav .pc li a:hover {
+    color: #1280cf;
+}
+
+nav .pc li a {
+    text-decoration: none;
+    color: #0e0d0d;
+    font-size: 16px;
+    color:#fff;
+}
+
+section{
+    position: relative;
+    width:100%;
+    height:100vh;
+}
+section .message{
+    width:100%;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size:14px;
+    font-weight: 300;
+    color:#fff;
+    width:60%;
+    margin:auto;
+}
+section .message .f{
+    display:inline-block;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color:#fff;
+    background-image: linear-gradient(43deg, rgb(211, 24, 24), rgb(42, 42, 194), rgb(43, 177, 43));
+    background-clip: text;
+    color:transparent;
+    padding:8px 0;
+    white-space: nowrap;
+    width:100%;
+    overflow: hidden;
+    /* animation: typing 8s infinite; */
+    animation-direction: alternate-reverse;
+}
+@keyframes typing {
+    from{
+        width:0;
+    }
+}
+section .message .g{
+    width:75%;
+    margin:auto;
+}
+section .message ul{
+    display: flex;
+    gap:12px;
+    justify-content: center;
+    padding:8px;
+}
+section .message ul li{
+    list-style: none;
+    border:1px solid #0096874a;
+    border-radius: 24px;
+    padding:4px 18px;
+    position: relative;
+    background: transparent;
+}
+section .message ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+section .message ul li a span{
+    background: #1a9d90;
+    height:100%;
+    width:0;
+    border-radius:24px;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+    transition: 0.8s;
+}
+section .message ul li:hover span{
+    width:100%;
+    border:none;
+}
+
+
+/* data table */
+.box {
+    width: 100%;
+    user-select: none;
+    height: auto;
+    padding: 8px;
+    position: relative;
+    background: #fff;
+}
+
+.box .cont {
+    border-collapse: collapse;
+    margin: 18px 0;
+    margin-top: 120px;
+    font-size: 1em;
+    text-align: left;
+    width:100%;
+}
+
+.box .cont td {
+    padding: 18px 6px;
+}
+
+.box table tbody tr td .post {
+    margin: auto;
+    border: 2px solid #dad3d382;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    width: 284px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.box .cont .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box .cont tbody tr {
+    border-radius: 4px;
+}
+.box table tbody tr td .post:hover {
+    border: 2px solid rgb(201, 209, 213);
+    box-shadow: 0 0 16px 8px rgba(132, 132, 132, 0.329);
+}
+
+.box table tbody tr td .des {
+    padding: 4px;
+    padding-top:0;
+}
+
+.box table tbody tr td .post .img {
+    width: 280px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+}
+.box table tbody tr td .post .visit{
+    font-size:12px;
+    margin:2px;
+    text-decoration: none;
+    color:#000;
+}
+.box table tbody tr td .post .visit i{
+    color:rgb(14, 204, 0);
+    margin:4px;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink {
+    50%{
+        opacity:0;
+    }   
+}
+.box table tbody tr td button{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100px;
+    padding: 6px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(207, 33, 3);
+}
+
+.box table tbody tr td button:hover {
+    background: rgb(14, 147, 4);
+}
+.box table tbody tr td button a{
+    text-decoration: none;
+    color:#fff;
+}
+
+
+@media (width:1280px){
+    nav .logo p {
+        font-size: 28px;
+    }
+
+    nav .logo span {
+        font-size: 28px;
+    }
+
+    nav .logo .nep {
+        font-size: 18px;
+    }
+    .message {
+        text-align: center;
+        font-size:16px;
+    }
+}
+
+@media (width:1024px) and (height:1366px) {
+    nav .logo p {
+        font-size: 28px;
+    }
+
+    nav .logo span {
+        font-size: 28px;
+    }
+
+    nav .logo .nep {
+        font-size: 18px;
+    }
+
+    nav .let {
+        margin-right: 8%;
+    }
+    .message{
+        text-align: center;
+        font-size:14px;
+    }
+}
+
+@media (width:1024px) and (height:600px) {
+    nav .logo p {
+        font-size: 28px;
+    }
+
+    nav .logo span {
+        font-size: 28px;
+    }
+
+    nav .logo .nep {
+        font-size: 18px;
+    }
+
+    nav .let {
+        margin-right: 8%;
+    }
+}
+
+@media (max-width:912px) {
+    .message{
+        text-align: center;
+        font-size:14px;
+    }
+}
+
+@media (max-width:842px) {
+    nav{
+        height:120px;
+        display:block;
+    }
+    nav .logo p {
+        font-size: 28px;
+        text-align: center;
+    }
+    nav .let{
+        display:flex;
+    }
+    nav .let .pc {
+        width: 100%;
+        border-radius: 8px;
+        justify-content: center;
+    }
+
+    nav .let .pc li {
+        padding: 4px 0;
+    }
+
+    nav .let .pc li a {
+        font-size: 18px;
+    }
+    section .message{
+        font-size: 14px;
+    }
+    section .message .f{
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width:540px){
+    nav .let ul li a{
+        font-size: 16px;
+    }
+    section .message{
+        font-size:12px;
+    }
+    section .message .f{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:390px){
+    .box{
+        padding:0;
+        width:104%;
+    }
+    .box .cont td {
+        padding: 18px 0px;
+    }
+    .box table tbody tr td .post{
+        width: 264px;
+    }
+    .box table tbody tr td .post .img {
+        width: 260px;
+        height: 190px;
+        margin:0;
+    }
+    .box table tbody tr td .post .img img{
+        width: 260px;
+        height: 190px;
+    }
+}
+@media (max-width:375px) {
+    nav .let .pc{
+        gap:10px;
+    }
+    section .message{
+        font-size:10px;
+    }
+    section .message .f{
+        font-size: 23px;
+    }
+    section .message ul li{
+        padding:3px 6px;
+    }
+    section .message ul li a{
+        font-size: 10px;
+    }
+    .box{
+        padding:0;
+        width:104%;
+    }
+    .box .cont td {
+        padding: 18px 0px;
+    }
+    .box table tbody tr td .post{
+        width: 264px;
+    }
+    .box table tbody tr td .post .img {
+        width: 260px;
+        height: 190px;
+        margin:0;
+    }
+    .box table tbody tr td .post .img img{
+        width: 260px;
+        height: 190px;
+    }
+}
+@media (max-width:280px) {
+    nav{
+        width:280px;
+    }
+    nav .let .pc{
+        gap:10px;
+    }
+    .logo .h {
+        font-size: 20px;
+    }
+    
+    .logo p span {
+        font-size: 24px;
+    }
+    
+    .logo p .nep {
+        font-size: 14px;
+    }
+    nav .let .pc li a{
+        font-size: 12px;
+    }
+    .box{
+        padding:0;
+        width:104%;
+    }
+    .box .cont td {
+        padding: 18px 0px;
+    }
+    .box table tbody tr td .post{
+        width: 264px;
+    }
+    .box table tbody tr td .post .img {
+        width: 260px;
+        height: 190px;
+        margin:0;
+    }
+    .box table tbody tr td .post .img img{
+        width: 260px;
+        height: 190px;
+    }
+}
